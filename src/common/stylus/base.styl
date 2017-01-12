@@ -1,0 +1,73 @@
+body, html
+    line-height: 1
+    font-weight: 200
+    font-family: 'PingFang SC', 'STHeitiSC-Light','Helvetica-Light', arial, sans-serif
+
+/**********
+ * 工具样式
+ **********/
+
+.center-block
+    display: block
+    margin-right: auto
+    margin-left: auto
+
+.pull-right
+    float: right !important
+
+.pull-left
+    float: left !important
+
+.text-right
+    text-align: right !important
+
+.text-left
+    text-align: left !important
+
+.text-center
+    text-align: center !important
+
+.show
+    display: block !important;
+
+.hide
+    display: none !important
+
+.invisible
+    visibility: hidden
+
+.text-hide
+    font: 0/0 a
+    color: transparent
+    text-shadow: none
+    background-color: transparent
+    border: 0
+
+.clearfix:before,
+.clearfix:after
+    content: ''
+    display: table
+
+.clearfix:after
+    clear: both
+
+.clearfix
+    zoom: 1
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5)
+    .border-1px
+        &::after
+            -webkit-transform: scaleY(0.7)
+            transform: scaleY(0.7)
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2)
+    .border-1px
+        &::after
+            -webkit-transform: scaleY(0.5)
+            transform: scaleY(0.5)
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3)
+    .border-1px
+        &::after
+            -webkit-transform: scaleY(0.3333)
+            transform: scaleY(0.3333)
